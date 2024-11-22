@@ -1,17 +1,19 @@
-﻿namespace Tyuiu.IvanovPG.Sprint5.Task1.V21
+﻿
+using Tyuiu.IvanovPG.Sprint5.Task1.V21.Lib;
+namespace Tyuiu.IvanovPG.Sprint5.Task1.V21
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            Console.Title = "Спринт #5 | Выполнила: Новикова В.А. | ИСТН-б-24-1";
+            Console.Title = "Спринт #5 | Выполнила: Иванов.П.Г. | ИСТН-б-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема:                                                                   *");
             Console.WriteLine("* Задание #1                                                              *");
             Console.WriteLine("* Вариант #5                                                              *");
-            Console.WriteLine("* Выполнила: Новикова Валерия Александрован | ИСТН-б-24-1                 *");
+            Console.WriteLine("* Выполнила: Иванов.П.Г.                    | ИСТН-б-24-1                 *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");

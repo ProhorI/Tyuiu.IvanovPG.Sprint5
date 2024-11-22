@@ -20,7 +20,7 @@ namespace Tyuiu.IvanovPG.Sprint5.Task1.V21.Lib
             string strY;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Round(5 - 3 * x + (1 + Math.Sin(x)) / (2 * x - 0.5), 2);
+                y = Math.Round((2 * x - 3) / (Math.Cos(x) - 2 * x) + 5 * x - Math.Sin(x), 2);
                 strY = Convert.ToString(y);
                 if (x != stopValue)
                 {
@@ -37,3 +37,4 @@ namespace Tyuiu.IvanovPG.Sprint5.Task1.V21.Lib
         }
     }
 }
+//(2 * x - 3) / (Math.Cos(x) - 2 * x) + 5 * x - Math.Sin(x)
