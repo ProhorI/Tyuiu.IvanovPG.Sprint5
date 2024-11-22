@@ -8,13 +8,13 @@ namespace Tyuiu.IvanovPG.Sprint5.Task0.V14
         {
             DataService ds = new DataService();
             int x = 3;
-            Console.Title = "Спринт #5 | Выполнила: Новикова В.А. | ИСТН-б-24-1";
+            Console.Title = "Спринт #5 | Выполнила: Иванов.П.Г | ИСТН-б-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема:                                                                   *");
             Console.WriteLine("* Задание #0                                                              *");
             Console.WriteLine("* Вариант #11                                                             *");
-            Console.WriteLine("* Выполнила: Новикова Валерия Александрован | ИСТН-б-24-1                 *");
+            Console.WriteLine("* Выполнила: Иванов.П.Г | ИСТН-б-24-1                                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дано выражение вычислить его значение при x = 3, результат сохранить    *");
