@@ -18,9 +18,3 @@ namespace Tyuiu.IvanovPG.Sprint5.Task4.V23.Lib
     }
 }
 //Math.Round(Math.Pow(x, -3) + 2 + Math.Cos(x), 3)
-//string strX = File.ReadAllText(path);
-//string strX1 = strX.Replace(".", ",");
-//double res = Math.Pow(Convert.ToDouble(strX1), -3) + 2 + Math.Cos(Convert.ToDouble(strX1));
-//res = Math.Round(res, 3);
-
-//return res;
