@@ -20,7 +20,7 @@ namespace Tyuiu.IvanovPG.Sprint5.Task5.V24.Lib
                     {
                         double lineParse = double.Parse(number);
 
-                        if (lineParse % 1 == 0)
+                        if (lineParse % 1 == 0 && lineParse >= 10)
                         {
                             res += lineParse;
                         }
