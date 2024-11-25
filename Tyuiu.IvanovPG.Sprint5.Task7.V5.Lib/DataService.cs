@@ -8,22 +8,35 @@ namespace Tyuiu.IvanovPG.Sprint5.Task7.V5.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string strLine = "";
-            using (StreamReader R = new(path))
+            string pathSaveFile = $@"{Directory.GetCurrentDirectory()}\OutPutDataFileTask7V5.txt";
+
+            FileInfo fileInfo = new FileInfo(pathSaveFile);
+            bool fileExists = fileInfo.Exists;
+
+            if (fileExists)
             {
-                string L;
-                while ((L = R.ReadLine()) != null)
+                File.Delete(pathSaveFile);
+            }
+
+            string strLine = "";
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
                 {
-                    for (int i = 0; i < L.Length; i++)
+                    for (int i = 0; i < line.Length; i++)
                     {
-                        if ((L[i] >= 'А' && L[i] <= 'я' || L[i] == '!' || L[i] == '.' || L[i] == ',') ^ (L[i] == ' '))
+                        if (((line[i] >= 'а') && (line[i] <= 'я')) || ((line[i] >= 'А') && (line[i] <= 'Я')) || line[i] == ' ' || line[i] == '!' || line[i] == ',' || line[i] == '.')
                         {
-                            strLine = strLine + L[i];
+                            strLine = strLine + line[i];
                         }
                     }
+
+                    File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
+                    strLine = "";
                 }
-                return strLine.Trim('!');
             }
+            return pathSaveFile;
         }
     }
 }
