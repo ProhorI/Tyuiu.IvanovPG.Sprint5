@@ -39,5 +39,4 @@ namespace Tyuiu.IvanovPG.Sprint5.Task7.V5.Lib
             return pathSaveFile;
         }
     }
-    }
 }
