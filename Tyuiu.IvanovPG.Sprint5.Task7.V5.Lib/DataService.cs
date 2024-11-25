@@ -26,7 +26,7 @@ namespace Tyuiu.IvanovPG.Sprint5.Task7.V5.Lib
                 {
                     for (int i = 0; i < line.Length; i++)
                     {
-                        if (((line[i] >= 'а') && (line[i] <= 'я')) || ((line[i] >= 'А') && (line[i] <= 'Я')) || line[i] == ' ' || line[i] == '!' || line[i] == ',' || line[i] == '.' || line[i] == '  ')
+                        if (((line[i] >= 'а') && (line[i] <= 'я')) || ((line[i] >= 'А') && (line[i] <= 'Я')) || line[i] == ' ' || line[i] == '!' || line[i] == ',' || line[i] == '.')
                         {
                             strLine = strLine + line[i];
                         }
