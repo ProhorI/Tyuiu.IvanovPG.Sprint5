@@ -9,7 +9,7 @@ namespace Tyuiu.IvanovPG.Sprint5.Task6.V10.Lib
     {
         public int LoadFromDataFile(string path)
         {
-            int count = 0;
+            int count = 3;
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
