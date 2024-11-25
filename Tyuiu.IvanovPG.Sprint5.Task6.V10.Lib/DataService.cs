@@ -9,15 +9,21 @@ namespace Tyuiu.IvanovPG.Sprint5.Task6.V10.Lib
     {
         public int LoadFromDataFile(string path)
         {
-            int count = 3;
+            int count = 0;
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    for (int i = 0; i < line.Length - 2; i++)
+                    string[] charsToRemove = new string[5] { "?", ",", ".", ";", "'" };
+                    foreach (var c in charsToRemove)
                     {
-                        if ((char.IsDigit(line[i])) && (char.IsDigit(line[i + 1])) && (char.IsDigit(line[i + 2])))
+                        line = line.Replace(c, string.Empty);
+                    }
+                    string[] lineArray = line.Split(' ');
+                    for (int i = 0; i < lineArray.Length; i++)
+                    {
+                        if (lineArray[i].Length == 4)
                         {
                             count++;
                         }
